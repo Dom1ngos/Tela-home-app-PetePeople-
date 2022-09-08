@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="assets/fontawesome/css/all.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/materialize.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+            $('.btnHome').click(function () {
+                fechar()
+                $('#Home').show()
+            })
+            $('.btnMeusPets').click(function () {
+                fechar()
+                $('#MeusPets').show()
+            })
+            $('.btnLojas').click(function () {
+                fechar()
+                $('#Lojas').show()
+            })
+            function fechar() {
+                $('#Home').hide()
+                $('#MeusPets').hide()
+                $('#Lojas').hide()
+            }
+
+            $('.btnAlerta1').click(function () {
+                $('.modaDetalhesPet').hide();
+                $('.Alerta1').fadeIn();
+            })
+
+
+
+
+
+        });
+    </script>
+</head>
+
+<!--TESTE COMMIT-->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <session id="Home">
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12">
+                    <div class="col s12 ">
+                        <img src="./assets/img/logop.png" class="col s2 mt_10" />
+
+                        <div class="col s8 p-0 fa-1_5x offset-s1 center-align">
+
+                        </div>
+                        <i class="fa fa-bars fa-2x right"></i>
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12">
+
+                    <div class="col s12">
+                        <div class="col s12 CardPost mb-20 Post1 p-0">
+                            <div class="col s12 CardTop">
+                                <div class="col s2 Avatar">
+                                    <img src="./assets/img/avatar.png" class="col s2 mt-10 ml_20" />
+                                </div>
+                                <div class="col s5 white-text mt-20">
+                                    Krista Benneton
+                                </div>
+
+                                <div class="col s1 white-text fa-2x mt-10 ml-100">
+                                    <i class="far fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+
+                            <div class="col s12 btnLike">
+                                <div class="col s4">
+                                    <div class="col s8 offset-s2 grey lighten-2 round-10 black-text">
+                                        <i class="fas fa-thumbs-up white-text"></i> <span
+                                            style="font-size: 11px;">102</span>
+                                    </div>
+                                </div>
+
+                                <div class="col s4">
+                                    <div class="col s8 offset-s2 grey lighten-2 round-10 black-text">
+                                        <i class="fas fa-heart white-text"></i> <span
+                                            style="font-size: 11px;">110</span>
+                                    </div>
+                                </div>
+
+                                <div class="col s4">
+                                    <div class="col s8 offset-s2 grey lighten-2 round-10 black-text">
+                                        <i class="fas fa-share-alt white-text"></i> <span
+                                            style="font-size: 11px;">50</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col s12 CardPost mb-20 Post2 p-0">
+                            <div class="col s12 CardTop">
+                                <div class="col s2 Avatar">
+                                    <img src="./assets/img/avatar.png" class="col s2 mt-10 ml_20" />
+                                </div>
+                                <div class="col s5 white-text mt-20">
+                                    Krista Benneton
+                                </div>
+
+                                <div class="col s1 white-text fa-2x mt-10 ml-100">
+                                    <i class="far fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+
+                            <div class="col s12 btnLike">
+                                <div class="col s4">
+                                    <div class="col s8 offset-s2 grey lighten-2 round-10 black-text">
+                                        <i class="fas fa-thumbs-up white-text"></i> <span
+                                            style="font-size: 11px;">102</span>
+                                    </div>
+                                </div>
+
+                                <div class="col s4">
+                                    <div class="col s8 offset-s2 grey lighten-2 round-10 black-text">
+                                        <i class="fas fa-heart white-text"></i> <span
+                                            style="font-size: 11px;">110</span>
+                                    </div>
+                                </div>
+
+                                <div class="col s4">
+                                    <div class="col s8 offset-s2 grey lighten-2 round-10 black-text">
+                                        <i class="fas fa-share-alt white-text"></i> <span
+                                            style="font-size: 11px;">50</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col s12 CardPost mb-20 Post3 p-0">
+                            <div class="col s12 CardTop">
+                                <div class="col s2 Avatar">
+                                    <img src="./assets/img/avatar.png" class="col s2 mt-10 ml_20" />
+                                </div>
+                                <div class="col s5 white-text mt-20">
+                                    Krista Benneton
+                                </div>
+
+                                <div class="col s1 white-text fa-2x mt-10 ml-100">
+                                    <i class="far fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+
+                            <div class="col s12 btnLike">
+                                <div class="col s4">
+                                    <div class="col s8 offset-s2 grey lighten-2 round-10 black-text">
+                                        <i class="fas fa-thumbs-up white-text"></i> <span
+                                            style="font-size: 11px;">102</span>
+                                    </div>
+                                </div>
+
+                                <div class="col s4">
+                                    <div class="col s8 offset-s2 grey lighten-2 round-10 black-text">
+                                        <i class="fas fa-heart white-text"></i> <span
+                                            style="font-size: 11px;">110</span>
+                                    </div>
+                                </div>
+
+                                <div class="col s4">
+                                    <div class="col s8 offset-s2 grey lighten-2 round-10 black-text">
+                                        <i class="fas fa-share-alt white-text"></i> <span
+                                            style="font-size: 11px;">50</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col s12">&nbsp;</div>
+
+            </session>
+
+            <session id="MeusPets" style="display: none;">
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12">
+                    <div class="col s12 ">
+                        <img src="./assets/img/logop.png" class="col s2 mt_10" />
+
+                        <i class="fa fa-bars fa-2x right"></i>
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s4 offset-s4">
+                    <h5>Meus pets</h5>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12">
+                    <div class="col s6">
+                        <div class="col s12 MyPet Pet1 p-0 modal-trigger" href="#modaDetalhesPet">
+                            <div class="grey cardPet">
+                                <div class="col s2 white-text mt-5 ml_5">
+                                    <strong>Charlie</strong>
+                                </div>
+                                <div class="col s1 white-text mt-5 ml-100">
+                                    <i class="far fa-ellipsis-v"></i>
+                                </div>
+                                <div class="col s1 white-text  ml_5">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="col s8 white-text  mt-3" style="font-size: 10px;">
+                                    1 ano e 3 meses
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s6">
+                        <div class="col s12 MyPet Pet2 p-0 modal-trigger" href="#modaDetalhesPet">
+                            <div class="grey  cardPet">
+                                <div class="col s2 white-text mt-5 ml_5">
+                                    <strong>Milo</strong>
+                                </div>
+                                <div class="col s1 white-text mt-5 ml-100">
+                                    <i class="far fa-ellipsis-v"></i>
+                                </div>
+                                <div class="col s1 white-text  ml_5">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="col s8 white-text  mt-3" style="font-size: 10px;">
+                                    3 anos
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </session>
+
+            <session id="Lojas" style="display: none;">
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12">
+                    <div class="col s12 ">
+                        <img src="./assets/img/logop.png" class="col s2 mt_10" />
+
+                        <i class="fa fa-bars fa-2x right"></i>
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s4 offset-s5">
+                    <h5>Lojas</h5>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12">
+                    <div class="col s6">
+                        <div class="col s12 MyPet Loja1 p-0 modal-trigger" href="#modalDetalhesLoja">
+                            <div class="grey cardPet">
+                                <div class="col s8 white-text mt-15">
+                                    <strong>Wild Things</strong>
+                                </div>
+                                <div class="col s1 white-text mt-12 ml-5 fa-1_3x">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s6">
+                        <div class="col s12 MyPet Loja2 p-0 modal-trigger" href="#modalDetalhesLoja">
+                            <div class="grey cardPet">
+                                <div class="col s8 white-text mt-15">
+                                    <strong>Pet Mais</strong>
+                                </div>
+                                <div class="col s1 white-text mt-12 ml-5 fa-1_3x">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </session>
+
+            <session id="Alerta1" style="display: none;">
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12">
+                    <div class="col s12 ">
+                        <img src="./assets/img/logop.png" class="col s2 mt_10" />
+
+                        <i class="fa fa-bars fa-2x right"></i>
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 center-align">
+                    <div class="col s12">
+                        <h5>Emitir alerta de emergência</h5>
+                    </div>
+                </div>
+
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 center-align">
+                    <img src="./assets/img/alerta1.png" class="col s12 mt_10" />
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 mt-10" style="text-align: center; font-size:16px;">
+                    <div class="col s12">
+                        Você pode emitir um alerta quando seu pet <br>
+                        desaparecer ou quando precisar de<br>
+                        algum tipo de ajuda em alguma emergência.<br>
+                        <br>
+                        Você pode configurar um ráio de alerta e o<br>
+                        motivo do alerta para facilitar a visualização<br>
+                        e a ajuda das pessoas que vão receber<br>
+                        seu alerta.
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 mt-5">
+                    <div class="col s12 center-align mt-15">
+                        <a class="waves-effect waves-light white-text btnAlerta2 red"
+                            style="width: 343px; height: 39px;border-radius: 30px;">
+                            <p class="mt-10">EMITIR ALERTA</p>
+                        </a>
+                    </div>
+                </div>
+            </session>
+
+            <session id="Alerta2" style="display: none;">
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12">
+                    <div class="col s12 ">
+                        <img src="./assets/img/logop.png" class="col s2 mt_10" />
+
+                        <i class="fa fa-bars fa-2x right"></i>
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 center-align">
+                    <div class="col s12">
+                        <h5>Emitir alerta de emergência</h5>
+                    </div>
+                </div>
+
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 mt-5">
+                    <div class="col s10 offset-s1 mt-15" style="width: 343px;height: 85px;border-radius: 15px;">
+                        <div class="col s10 fa-1_5x mt-20">
+                            Motivo do alerta
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 left fa-1_5x">
+                    <div class="col s12">
+                        Raio do alerta - 2Km
+                    </div>
+
+                    <!--Aqui entra a barra de indicação de KM do alerta-->
+
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 mt-20">
+                    <div class="col s10 offset-s1 mt-15" style="width: 343px;height: 184px;border-radius: 15px;">
+                        <div class="col s10 fa-1_5x mt-20">
+                            Descrição do alerta
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 mt-20">
+                    <div class="col s12 center-align mt-15">
+                        <a class="waves-effect waves-light white-text btnAlerta2 red"
+                            style="width: 343px; height: 39px;border-radius: 30px;">
+                            <p class="mt-10">EMITIR ALERTA</p>
+                        </a>
+                    </div>
+                </div>
+            </session>
+
+            <session id="Alerta3" style="display: none;">
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12">
+                    <div class="col s12 ">
+                        <img src="./assets/img/logop.png" class="col s2 mt_10" />
+
+                        <i class="fa fa-bars fa-2x right"></i>
+                    </div>
+                </div>
+
+                <div class="col s12">&nbsp;</div>
+
+                <div class="col s12 center-align">
+                    <div class="col s12">
+                        <h5>Alerta emitido!</h5>
+                    </div>
+                </div>
+    
+    
+                <div class="col s12">&nbsp;</div>
+                <div class="col s12">&nbsp;</div>
+    
+                <div class="col s12 mt-20">
+                    <img src="./assets/img/alerta2.png" class="col s8 mt_10 offset-s2" />
+                </div>
+    
+                <div class="col s12">&nbsp;</div>
+                
+    
+                <div class="col s12 center-align">
+                    <div class="col s12">
+                        <h5>Aguardando retorno</h5>
+                    </div>
+                </div>
+    
+               
+    
+               
+    
+                <div class="col s12">&nbsp;</div>
+                <div class="col s12">&nbsp;</div>
+    
+                <div class="col s12 mt-20">
+                    <div class="col s12 center-align mt-15">
+                        <a class="waves-effect waves-light white-text btnAlerta2 orange"
+                            style="width: 343px; height: 39px;border-radius: 30px;">
+                            <p class="mt-10">CENCELAR ALERTA</p>
+                        </a>
+                    </div>
+                </div>
+            </session>
+
+
+
+            <div class="col s8 offset-s2 btnMenu center-align">
+                <div class=" fa-1_3x btnHome">
+                    <i class="fas fa-home"></i>
+                </div>
+
+                <div class="  fa-1_3x btnMeusPets">
+                    <i class="fas fa-paw"></i>
+                </div>
+
+                <div class=" fa-1_3x">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <div class="  fa-1_3x btnLojas">
+                    <i class="fas fa-money-check-alt"></i>
+                </div>
+
+                <div class="  fa-1_3x">
+                    <i class="fas fa-user-alt"></i>
+                </div>
+
+            </div>
+
+            <div id="modaDetalhesPet" class="modal bottom-sheet">
+                <div class="modal-content row p-0">
+                    <div class="col s12 CardDetalhePet  DetalhePet ">
+                        <div class="col s12 CardTopPet">
+                            <div class="col s1 white-text fa-2x left-align mt-5">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+
+
+                            <div class="col s1 white-text fa-2x right">
+                                <i class="far fa-ellipsis-v"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col s12">
+                        <div class="col s12 center-align btnCircle">
+                            <img src="./assets/img/ciclePet.png" />
+                        </div>
+                    </div>
+
+                    <div class="col s12 btnInfoPet">
+
+                        <div class="col s12">&nbsp;</div>
+
+                        <div class="col s12">
+                            <div class="col s4 ml-15 mt-10 fa-2x">
+                                Charlie
+                            </div>
+
+                            <div class="col s2 yellow-text right mt-10 fa-1_5x">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="col s8 center-align" style="font-size: 16px;">
+                            Raça : Labrador Retriever
+                        </div>
+
+                        <div class="col s12">&nbsp;</div>
+
+                        <div class="col s12" style="font-size: 16px;">
+                            <div class="col s8 ml-15">
+                                <i class="fas fa-clock yellow-text"></i> 1 ano e 3 meses
+                            </div>
+
+                            <div class="col s3 right">
+                                <i class="fas fa-mars yellow-text fa-1_3x"></i> Macho
+                            </div>
+                        </div>
+
+                        <div class="col s12">&nbsp;</div>
+
+                        <div class="col s12">
+                            <div class="col s8 ml-15">
+                                <h5>Sobre o Charlie</h5>
+                            </div>
+                        </div>
+
+                        <div class="col s12">
+                            <div class="col s12 ml-15">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed viverra, ipsum quis dictum luctus, enim nunc <br>
+                                mattis erat, sit amet tempor magna massa vel neque. <br>
+                                Cras accumsan enim elit, vulputate pretium sem <br>
+                                porttitor semper. Mauris mollis nisi in libero <br>
+                                semper pharetra.
+                            </div>
+                        </div>
+
+                        <div class="col s12">
+                            <div class="col s12 center-align mt-15">
+                                <a class="waves-effect waves-light white-text btnAlerta1 red"
+                                    style="width: 343px; height: 39px;border-radius: 30px;">
+                                    <p class="mt-10">EMITIR ALERTA</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div id="modalDetalhesLoja" class="modal bottom-sheet">
+                <div class="modal-content row p-0">
+
+                    <div class="col s12 CardDetalheLoja  DetalheLoja ">
+                        <div class="col s12 CardTopPet">
+                            <div class="col s1 white-text fa-2x left-align mt-5">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+
+
+                            <div class="col s1 white-text fa-2x right mt-5">
+                                <i class="far fa-ellipsis-v"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col s12 btnInfoLoja">
+
+                        <div class="col s12 btnLoja">
+                            <div class="col s12 mt-15">
+                                <div class="col s4 mt-10">
+                                    <h5>Pet Mais</h5>
+                                </div>
+
+                                <div class="col s2 yellow-text right mt-12 fa-1_5x">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="col s8 ml-10" style="font-size: 16px;">
+                                2 Km de distância até você
+                            </div>
+                        </div>
+
+
+                        <div class="col s12">&nbsp;</div>
+                        <div class="col s12">&nbsp;</div>
+
+                        <div class="col s12 mt-60">
+                            <div class="col s6">
+                                <div class="col s12 MyProduto Produto1 p-0 modal-trigger" href="#modalDetalhesProduto">
+                                    <div class="grey cardProduto">
+                                        <div class="col s12 white-text mt-5">
+                                            <strong>Hownd Shampoo</strong>
+                                            <i class="fas fa-shopping-basket white-text ml-10"></i>
+                                        </div>
+                                        <div class="col s4 white-text" style="font-size: 10px;">
+                                            Shampoo
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s6">
+                                <div class="col s12 MyProduto Produto2 p-0 modal-trigger" href="#modalDetalhesProduto">
+                                    <div class="grey cardProduto">
+                                        <div class="col s12 white-text mt-5">
+                                            <strong>Biscoito Canino</strong>
+                                            <i class="fas fa-shopping-basket white-text ml-10"></i>
+                                        </div>
+                                        <div class="col s4 white-text" style="font-size: 10px;">
+                                            Comidas
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div id="modalDetalhesProduto" class="modal bottom-sheet">
+                <div class="modal-content row p-0">
+
+                    <div class="col s12 CardDetalheProduto  DetalheProduto ">
+                        <div class="col s12">
+                            <div class="col s1 white-text fa-2x left-align mt-5">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+
+
+                            <div class="col s1 white-text fa-2x right mt-5">
+                                <i class="far fa-ellipsis-v"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col s12 btnInfoProduto">
+
+                        <div class="col s12">&nbsp;</div>
+
+
+                        <div class="col s12 ml-10">
+                            <div class="col s8">
+                                <h5>Hownd Shampoo</h5>
+                            </div>
+
+                            <div class="col s2 right mt-12 fa-1_5x">
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+
+                        <div class="col s4 center-align" style="font-size: 16px;">
+                            Shampoo
+                        </div>
+
+                        <div class="col s12">&nbsp;</div>
+                        <div class="col s12">&nbsp;</div>
+
+                        <div class="col s12">
+                            <div class="col s8 ml-15">
+                                <h5>Descrição do produto</h5>
+                            </div>
+                        </div>
+
+                        <div class="col s12">
+                            <div class="col s12 ml-15">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed viverra, ipsum quis dictum luctus, enim nunc <br>
+                                mattis erat, sit amet tempor magna massa vel neque. <br>
+                                Cras accumsan enim elit, vulputate pretium sem <br>
+                                porttitor semper. Mauris mollis nisi in libero <br>
+                                semper pharetra.
+                            </div>
+                        </div>
+
+                        <div class="col s12">&nbsp;</div>
+                        <div class="col s12">&nbsp;</div>
+
+                        <div class="col s12">
+                            <div class="col s5 fa-2x ml-15">
+                                <i class="fad fa-minus-circle"></i> 1 <i class="fad fa-plus-circle"></i>
+                            </div>
+
+                            <div class="col s5 center-align">
+                                <a class="waves-effect waves-light black-text btnCarrinho yellow"
+                                    style="width: 190px; height: 39px;border-radius: 30px;">
+                                    <p class="mt-10">Add no Carrinho</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col s12">&nbsp;</div>
+
+                        <div class="col s12">
+                            <div class="col s12 ml-15">
+                                <h6>Compartilhar nas redes sociais</h6>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
